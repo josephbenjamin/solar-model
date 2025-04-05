@@ -18,3 +18,16 @@ pip install pvlib
 ```
 
 Stay tuned for updates and experiments!
+
+
+TimeShifts
+
+TMY data CSV:
+Row 10 = 22 >> Timestamp = 9am >> Shift Stated = +10min --> Implies 09:10 real timestamp
+
+Hourly Data CSV:
+Row 10 = 22 >> Timestamp = 09:10am >> Shift Stated = None --> Implies 09:10 real timestamp
+
+TMY data EPW file:
+Row 9 = 22 >> Timestamp = 09:00am >> Shift Stated = -50mins --> Implies 
+Conclude PVGIS EPW data is incorrect.
